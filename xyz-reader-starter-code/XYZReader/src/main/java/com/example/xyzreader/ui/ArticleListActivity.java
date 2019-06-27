@@ -70,6 +70,10 @@ public class ArticleListActivity extends ActionBarActivity implements
         if (savedInstanceState == null) {
             refresh();
         }
+
+        mToolbar.setTitle("");
+        setSupportActionBar(mToolbar);
+
     }
 
     private void refresh() {
